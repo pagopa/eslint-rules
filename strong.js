@@ -1,89 +1,107 @@
-/* eslint-disable no-undef */
-/* eslint-disable functional/immutable-data */
+/* eslint-disable */
 module.exports = {
-  root: true,
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    project: './tsconfig.json',
-    // sourceType: "module"
-  },
-  plugins: ['@typescript-eslint', 'import', 'functional', 'sonarjs'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:sonarjs/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
+  extends: './recommended.js',
+  plugins: [
+    "eslint-plugin-jsdoc",
+    "eslint-plugin-prefer-arrow",
+    "@typescript-eslint/tslint",
+    "extra-rules"
   ],
   rules: {
-    'no-case-declarations': 'off',
-    'no-inner-declarations': 'off',
-    'prefer-const': 'error',
-    curly: 'error',
-    'spaced-comment': ['error', 'always', { block: { balanced: true } }],
-    radix: 'error',
-    'one-var': ['error', 'never'],
-    'object-shorthand': 'error',
-    'no-var': 'error',
-    'no-param-reassign': 'error',
-    'no-underscore-dangle': 'error',
-    'no-undef-init': 'error',
-    'no-throw-literal': 'error',
-    'no-new-wrappers': 'error',
-    'no-eval': 'error',
-    'no-console': 'error',
-    'no-caller': 'error',
-    'no-bitwise': 'error',
-    eqeqeq: ['error', 'smart'],
-    'max-classes-per-file': ['error', 1],
-    'guard-for-in': 'error',
-    complexity: 'error',
-    'sonarjs/cognitive-complexity': ['error', 25],
-    'arrow-body-style': 'error',
-    'import/order': 'error',
-    '@typescript-eslint/no-unused-vars': 'off',
-    // Enable if we want to enforce the return type for all the functions
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-inferrable-types': 'off',
-    // TODO: added for compatibility. Removing this line we have to remove all the any usage in the code
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/array-type': [
-      'error',
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/ban-types": [
+      "error",
       {
-        default: 'generic',
-      },
+          "types": {
+              "Object": {
+                  "message": "Avoid using the `Object` type. Did you mean `object`?"
+              },
+              "Function": {
+                  "message": "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+              },
+              "Boolean": {
+                  "message": "Avoid using the `Boolean` type. Did you mean `boolean`?"
+              },
+              "Number": {
+                  "message": "Avoid using the `Number` type. Did you mean `number`?"
+              },
+              "String": {
+                  "message": "Avoid using the `String` type. Did you mean `string`?"
+              },
+              "Symbol": {
+                  "message": "Avoid using the `Symbol` type. Did you mean `symbol`?"
+              }
+          }
+      }
     ],
-    '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/consistent-type-assertions': 'error',
-    '@typescript-eslint/dot-notation': 'error',
-    '@typescript-eslint/member-delimiter-style': [
-      'error',
-      {
-        multiline: {
-          delimiter: 'semi',
-          requireLast: true,
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
-      },
+    "@typescript-eslint/consistent-type-assertions": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/explicit-member-accessibility": [
+        "error",
+        {
+            "accessibility": "explicit",
+            "overrides": {
+                "constructors": "no-public"
+            }
+        }
     ],
-    '@typescript-eslint/no-floating-promises': 'error',
-    'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': ['error'],
-    '@typescript-eslint/prefer-function-type': 'error',
-    '@typescript-eslint/restrict-plus-operands': 'error',
-    semi: 'off',
-    '@typescript-eslint/semi': ['error'],
-    '@typescript-eslint/unified-signatures': 'error',
-    'functional/no-let': 'error',
-    'functional/immutable-data': 'error',
-    'sonarjs/no-small-switch': 'off',
-    'sonarjs/no-duplicate-string': 'off',
-  },
-  settings: {
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/naming-convention": "error",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/prefer-namespace-keyword": "error",
+    "@typescript-eslint/triple-slash-reference": [
+        "error",
+        {
+            "path": "always",
+            "types": "prefer-import",
+            "lib": "always"
+        }
+    ],
+    "id-blacklist": [
+        "error",
+        "any",
+        "Number",
+        "number",
+        "String",
+        "string",
+        "Boolean",
+        "boolean",
+        "Undefined",
+        "undefined"
+    ],
+    "jsdoc/check-alignment": "error",
+    "jsdoc/check-indentation": "error",
+    "jsdoc/newline-after-description": "error",
+    "prefer-arrow/prefer-arrow-functions": "error",
+    "no-shadow": [
+        "error",
+        {
+            "hoist": "all"
+        }
+    ],
+    "no-invalid-this": "error",
+    "id-match": "error",
+    "constructor-super": "error",
+    "@typescript-eslint/no-namespace": "error",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "sort-keys": "error",
+    "extra-rules/no-commented-out-code": "error",
+    "no-useless-return": "error",
+    "no-multi-str": "error",
+    "max-params": ["error", 5],
+    "default-case": "error",
+    "functional/prefer-readonly-type": "error",
+    "functional/no-method-signature": "error",
+    "@typescript-eslint/tslint/config": [
+        "error",
+        {
+            "rules": {
+                "no-inferred-empty-object-type": true,
+            }
+        }
+    ],
   },
 };
