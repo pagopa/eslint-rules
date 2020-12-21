@@ -96,14 +96,6 @@ module.exports = {
     "default-case": "error",
     "functional/prefer-readonly-type": "error",
     "functional/no-method-signature": "error",
-    "fp/no-delete": "error",
-    "@typescript-eslint/tslint/config": [
-        "error",
-        {
-            "rules": {
-                "no-inferred-empty-object-type": true,
-            }
-        }
-    ],
+    "fp/no-delete": "error"
   },
 };
