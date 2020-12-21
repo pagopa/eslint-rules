@@ -42,7 +42,7 @@ module.exports = {
     "arrow-body-style": "error",
     "import/no-internal-modules": "off",
     "import/order": "error",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     // Enable if we want to enforce the return type for all the functions
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-inferrable-types": "off",
