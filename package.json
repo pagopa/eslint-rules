@@ -1,5 +1,5 @@
 {
-  "name": "io-eslint-rules",
+  "name": "eslint-config",
   "version": "0.0.1",
   "main": "strong.js",
   "repository": "git@github.com:pagopa/eslint-rules.git",
