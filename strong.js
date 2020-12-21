@@ -4,7 +4,6 @@ module.exports = {
   plugins: [
     "eslint-plugin-jsdoc",
     "eslint-plugin-prefer-arrow",
-    "@typescript-eslint/tslint",
     "extra-rules",
     "fp"
   ],
