@@ -1,6 +1,6 @@
 /* eslint-disable */
 module.exports = {
-  extends: './recommended.js',
+  extends: "./recommended.js",
   plugins: [
     "eslint-plugin-jsdoc",
     "eslint-plugin-prefer-arrow",
