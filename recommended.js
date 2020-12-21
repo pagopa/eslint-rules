@@ -51,6 +51,7 @@ module.exports = {
       "error",
       {
         default: "array-simple",
+        readonly: "generic"
       },
     ],
     "@typescript-eslint/await-thenable": "error",
@@ -83,6 +84,7 @@ module.exports = {
     "sonarjs/no-duplicate-string": "error",
     "sonarjs/cognitive-complexity": ["error", 19],
     "sonarjs/no-small-switch": "error",
+    "sonarjs/no-inverted-boolean-check": "error",
     "max-lines-per-function": ["error", 200],
   },
 };

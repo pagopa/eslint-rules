@@ -5,7 +5,8 @@ module.exports = {
     "eslint-plugin-jsdoc",
     "eslint-plugin-prefer-arrow",
     "@typescript-eslint/tslint",
-    "extra-rules"
+    "extra-rules",
+    "fp"
   ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -95,6 +96,7 @@ module.exports = {
     "default-case": "error",
     "functional/prefer-readonly-type": "error",
     "functional/no-method-signature": "error",
+    "fp/no-delete": "error",
     "@typescript-eslint/tslint/config": [
         "error",
         {
