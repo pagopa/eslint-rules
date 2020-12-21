@@ -6,6 +6,8 @@ This package provide the following ESLint custom rules for Typescript projects.
 - `react`
 - `strong`
 
+This repository replace [italia-tslint-rules](https://github.com/pagopa/io-tslint-rules) after TSLint deprecation.
+
 ## Usage
 
 To use this package install as devDependecy inside any typescript project with
