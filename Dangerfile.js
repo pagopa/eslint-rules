@@ -4,4 +4,4 @@
 // see https://github.com/teamdigitale/danger-plugin-digitalcitizenship/
 import checkDangers from 'danger-plugin-digitalcitizenship';
 
-checkDangers();
+checkDangers(); 
