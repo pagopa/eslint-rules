@@ -1,0 +1,32 @@
+{
+  "name": "@pagopa/eslint-config",
+  "version": "0.0.1",
+  "main": "strong.js",
+  "repository": "git@github.com:pagopa/eslint-rules.git",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . -c .eslintrc.js --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-extra-rules": "^0.0.0-development",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-functional": "^2.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.6.1",
+    "eslint-plugin-no-credentials": "^2.0.9",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "prettier": "^2.1.2"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
