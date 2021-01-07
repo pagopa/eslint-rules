@@ -7,7 +7,6 @@ parameters:
     default: install_dependencies
     values:
       - install_dependencies
-      - build
 
   - name: 'cache_version_id'
     type: string
@@ -34,8 +33,3 @@ steps:
   - script: |
       yarn install --frozen-lockfile --ignore-scripts
     displayName: 'Install yarn dependencies'
-  # This step could be removed (no build step for this repo)
-  - ${{ if eq(parameters.make, 'build') }}:
-    - bash: |
-        yarn build
-      displayName: 'Build code'
