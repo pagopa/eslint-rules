@@ -1595,17 +1595,17 @@ git-config-path@^1.0.1:
     fs-exists-sync "^0.1.0"
     homedir-polyfill "^1.0.0"
 
-gitlab@^6.0.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-6.4.0.tgz#03ebd18d16ac96e3d095999779fd6658fba5a438"
-  integrity sha512-q1dWC0WdMl9wFXmNKxAr8+Bs4t8eLB3zWmYXGRI+dITKuTxtxYhgeKc0FEhzXB5xgrQ0wEwraD1YtMvHZPl4rA==
+gitlab@6.3.7, gitlab@^6.0.0:
+  version "6.3.7"
+  resolved "https://registry.yarnpkg.com/gitlab/-/gitlab-6.3.7.tgz#ca35ecc4be069e70cce5c077ed202a1d28aeaf25"
+  integrity sha512-PNXAXdUr2o+Rpg8v7BQVjj5AVc39aJDpoxGxG7uHMr7hl6U6gR5TXlfcJtb9kRzPJI//rX/ccnvXbWhRftROPQ==
   dependencies:
     form-data "^2.3.3"
     humps "^2.0.1"
     ky "^0.11.0"
     ky-universal "^0.2.1"
     li "^1.3.0"
-    query-string "^6.8.1"
+    query-string "^6.5.0"
     randomstring "^1.1.5"
     universal-url "^2.0.0"
 
@@ -2899,7 +2899,7 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-query-string@^6.8.1:
+query-string@^6.5.0:
   version "6.13.8"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.8.tgz#8cf231759c85484da3cf05a851810d8e825c1159"
   integrity sha512-jxJzQI2edQPE/NPUOusNjO/ZOGqr1o2OBa/3M00fU76FsLXDVbJDv/p7ng5OdQyorKrkRz1oqfwmbe5MAMePQg==
