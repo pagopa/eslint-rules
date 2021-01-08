@@ -23,9 +23,8 @@
     "prettier": "^2.1.2"
   },
   "devDependencies": {
-    "danger": "7.0.0",
+    "danger": "^8.0.0",
     "danger-plugin-digitalcitizenship": "*",
-    "http-proxy-agent": "^4.0.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
