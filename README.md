@@ -46,6 +46,11 @@ promise-must-complete
 use-primitive-type
 ```
 
+This list has been produced following this steps:
+1. Follow [TSLint to ESLint migration guide](https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration) on the project [io-backend](https://github.com/pagopa/io-backend)
+2. Running `npx tslint-to-eslint-config` that produces a list of TSLint rules not available for ESLint (77 rules at the moment)
+3. Manually check each one for an alternative ESLint rules/plugins
+4. Verify each alternative ESLint rule/plugin on a testing file
 ## Usage
 
 ### Installation and Configuration
