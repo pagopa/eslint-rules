@@ -74,12 +74,7 @@ module.exports = {
     "jsdoc/check-indentation": "error",
     "jsdoc/newline-after-description": "error",
     "prefer-arrow/prefer-arrow-functions": "error",
-    "no-shadow": [
-        "error",
-        {
-            "hoist": "all"
-        }
-    ],
+    "no-shadow": "off",
     "no-invalid-this": "error",
     "id-match": "error",
     "constructor-super": "error",
@@ -87,6 +82,12 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/no-shadow": [
+        "error",
+        {
+            "hoist": "all"
+        }
+    ],
     "sort-keys": "error",
     "extra-rules/no-commented-out-code": "error",
     "no-useless-return": "error",
