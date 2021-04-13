@@ -46,7 +46,29 @@ module.exports = {
         }
     ],
     "@typescript-eslint/member-ordering": "error",
-    "@typescript-eslint/naming-convention": "error",
+    "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          selector: "variable",
+          format: ["PascalCase", "camelCase", "UPPER_CASE"],
+          leadingUnderscore: "allow",
+          trailingUnderscore: "allow"
+        },
+        {
+          selector: "typeLike",
+          format: ["PascalCase"]
+        },
+        {
+          selector: "property",
+          format: ["PascalCase", "camelCase", "UPPER_CASE", "snake_case"],
+          leadingUnderscore: "allow",
+          trailingUnderscore: "forbid"
+        },
+        {
+          selector: "interface",
+          format: ["PascalCase"],
+          prefix: ["I"]
+        },
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
