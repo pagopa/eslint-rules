@@ -1,6 +1,6 @@
 {
   "name": "@pagopa/eslint-config",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "strong.js",
   "repository": "git@github.com:pagopa/eslint-rules.git",
   "license": "MIT",
