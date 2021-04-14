@@ -93,7 +93,6 @@ module.exports = {
         "undefined"
     ],
     "jsdoc/check-alignment": "error",
-    "jsdoc/check-indentation": "error",
     "jsdoc/newline-after-description": "error",
     "prefer-arrow/prefer-arrow-functions": "error",
     "no-shadow": "off",
