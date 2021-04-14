@@ -68,7 +68,8 @@ module.exports = {
           selector: "interface",
           format: ["PascalCase"],
           prefix: ["I"]
-        },
+        }
+    ],
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
