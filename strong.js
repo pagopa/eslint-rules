@@ -101,7 +101,12 @@ module.exports = {
     "id-match": "error",
     "constructor-super": "error",
     "@typescript-eslint/no-namespace": "error",
-    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        {
+            allowExpressions: true
+        }
+    ],
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/no-shadow": [
