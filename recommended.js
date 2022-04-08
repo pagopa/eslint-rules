@@ -13,7 +13,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:sonarjs/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
   ],
   rules: {
