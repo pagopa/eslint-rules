@@ -4,6 +4,9 @@
   "main": "strong.js",
   "repository": "git@github.com:pagopa/eslint-rules.git",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",

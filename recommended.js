@@ -42,7 +42,7 @@ module.exports = {
     "arrow-body-style": "error",
     "import/no-internal-modules": "off",
     "import/order": "error",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     // Enable if we want to enforce the return type for all the functions
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-inferrable-types": "off",
@@ -51,7 +51,7 @@ module.exports = {
       "error",
       {
         default: "array-simple",
-        readonly: "generic"
+        readonly: "generic",
       },
     ],
     "@typescript-eslint/await-thenable": "error",
@@ -75,7 +75,7 @@ module.exports = {
     "@typescript-eslint/no-unused-expressions": ["error"],
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
-    "semi": "off",
+    semi: "off",
     "@typescript-eslint/semi": ["error"],
     "@typescript-eslint/unified-signatures": "error",
     "functional/no-let": "error",
