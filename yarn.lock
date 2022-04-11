@@ -1086,13 +1086,6 @@ eslint-plugin-jsdoc@^39.0.0:
     semver "^7.3.6"
     spdx-expression-parse "^3.0.1"
 
-eslint-plugin-no-credentials@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-no-credentials/-/eslint-plugin-no-credentials-2.1.10.tgz#1a2b10858fed59cca3515eac3ee6f8d9219f1513"
-  integrity sha512-JxV9jxj6dlyBwhrR8yqpcsdfaER4V6p4itQgmkoCEBltsz0HCLTd9T66XPduznK4lKN/9BqblKBYokGoWxvpGA==
-  dependencies:
-    lodash "^4.17.21"
-
 eslint-plugin-prefer-arrow@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow/-/eslint-plugin-prefer-arrow-1.2.3.tgz#e7fbb3fa4cd84ff1015b9c51ad86550e55041041"
@@ -2309,11 +2302,6 @@ lodash@^4.13.1:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.4.0:
   version "1.4.0"
