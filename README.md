@@ -9,6 +9,7 @@ This package provide the following ESLint custom rules for Typescript projects.
 This repository replace [italia-tslint-rules](https://github.com/pagopa/io-tslint-rules) after TSLint deprecation.
 
 The following TSLint rules (included inside `italia-tslint-rules`) are not supported for eslint at the moment and are missing in this package:
+
 ```
 bool-param-default
 max-union-size
@@ -47,10 +48,12 @@ use-primitive-type
 ```
 
 This list has been produced following these steps:
+
 1. Follow [TSLint to ESLint migration guide](https://code.visualstudio.com/api/advanced-topics/tslint-eslint-migration) on the project [io-backend](https://github.com/pagopa/io-backend)
 2. Running `npx tslint-to-eslint-config` that produces a list of TSLint rules not available for ESLint (77 rules at the moment)
 3. Manually check each one for an alternative ESLint rules/plugins
 4. Verify each alternative ESLint rule/plugin on a testing file
+
 ## Usage
 
 ### Installation and Configuration
