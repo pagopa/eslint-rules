@@ -110,7 +110,6 @@ module.exports = {
     "no-useless-return": "error",
     "no-multi-str": "error",
     "max-params": ["error", 5],
-    "default-case": "error",
     "functional/prefer-readonly-type": "error",
     "functional/no-method-signature": "error",
     "fp/no-delete": "error",
